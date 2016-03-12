@@ -1,0 +1,336 @@
+\RequirePackage{amsmath}
+\documentclass[a4paper,11pt,twoside,chapterprefix=TRUE]{scrbook}
+%\documentclass[a4paper,11pt,oneside,chapterprefix=TRUE]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage{scrlayer-scrpage}
+\usepackage[pass,a4paper]{geometry}
+%\usepackage[nointegrals]{wasyssym}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{url}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[inline]{asymptote}
+\usepackage{eqparbox}
+%\usepackage{subfig}
+
+\usepackage{mdwmath}
+\usepackage{mdwtab}
+\usepackage{euler}
+
+%\usepackage{proof}
+\usepackage[cmyk]{xcolor}
+\usepackage{stmaryrd}
+\usepackage{tikz}
+\usepackage{enumerate}
+\usepackage{titletoc}
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                            % when including figure files
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage[none]{ubuntu}
+%\fontUbuntuLight, \fontUbuntuMedium or \fontUbuntuCondensed \fontUbuntu
+%\usepackage{calrsfs}
+%standard
+%\usepackage{trajan}
+
+%Remark: Do explore other fonts.
+
+%Other interesting packages
+
+%\usepackage{asymptote}
+%\usepackage{algorithm2e}
+%\usepackage{}
+%\usepackage{}
+\newenvironment{calligraphic}{\usefont{T1}{pzc}{m}{it}}{}
+
+% Add your abbreviations here
+% Example
+\newcommand{\oc}{\mathbf{O}}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{proposition}{Prop}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+
+\renewcommand{\labelitemi}{$\bullet$}
+
+\newcommand{\vect}[2]{(#1_1,#1_2,\dotsc,#1_#2)}
+%e.g $vect{x}{n}$
+
+\newcounter{fem}
+\newtheorem{examp}[lemma]{Example}
+\setcounter{fem}{0}
+
+\makeindex
+
+
+\begin{document}
+
+\frontmatter
+
+
+\KOMAoptions{open=left}
+
+\thispagestyle{empty}
+\mbox{}
+\clearpage
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright: Prof(Miss) A. Mani, 2014-                                           %
+% Contact: a.mani.cms@gmail.com  Web: http://www.logicamani.in                   %
+% This template is licensed under GNU-GPL Version 3 and above                    %
+%    This program is free software: you can redistribute it and/or modify
+%    it under the terms of the GNU General Public License as published by
+%    the Free Software Foundation, either version 3 of the License, or
+%    (at your option) any later version.
+%
+%   This program is distributed in the hope that it will be useful,
+%   but WITHOUT ANY WARRANTY; without even the implied warranty of
+%   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%   GNU General Public License for more details.
+%
+%   You should have received a copy of the GNU General Public License
+%   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\begin{center}
+
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+%\includegraphics[width=0.15\textwidth]{./logo}~\\[1cm]
+
+%\textsc{\huge University of Calcutta}~\\[1.5cm]
+
+% Title
+\hrulefill 
+
+\vspace{5mm}
+
+{ \huge \bfseries \fontUbuntu [Title Here: Template for D.Sc, Ph.D, M.Phil Theses of University of Calcutta  ~\\[0.3cm] }
+
+\hrulefill 
+
+\vspace{36mm}
+
+\begin{center}
+{\Large \bfseries \fontUbuntu Thesis submitted for the Degree of $\ldots \ldots$ of the University of Calcutta.} 
+\end{center}
+
+\vspace{36mm}
+
+\begin{center}
+{\huge \bfseries \fontUbuntu YOUR_NAME}
+
+{\large \bfseries \fontUbuntu Department of Pure Mathematics
+
+University of Calcutta
+
+ADDRESS_LINE
+
+ADDRESS_LINE
+
+Email: {xxxxxxxxxx@xxxx}
+
+Web Page: $\text{http://www.xxxxxxxxxxx xx}$ }
+
+\end{center}
+
+\vspace{18mm}
+
+\hrulefill
+
+\vspace{5mm}
+{ \Large \bfseries \fontUbuntu University of Calcutta}
+
+\hrulefill
+%{\large \bfseries \fontUbuntu Supervisor: 
+
+%Professor XXXXXXXX XXXXXXXX
+
+%Department of XXXXX
+
+%I.S.I Kolkata}
+
+\end{center}
+\end{titlepage}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\clearpage
+
+
+\newpage
+\thispagestyle{empty}
+
+\vspace*{180pt}
+\bigskip
+
+\bigskip
+
+\bigskip
+
+
+\begin{center}
+\begin{huge}
+%\begin{trjnfamily}
+%\begin{sffamily}
+\begin{slshape}
+%\begin{ttfamily}
+%\begin{calligraphic}
+{\fontUbuntu \slshape
+
+Poetry,
+
+\bigskip
+
+Poetry 
+Poetry,
+
+\bigskip
+
+Poetry
+
+\bigskip
+
+and
+
+\bigskip
+
+Poetry. }
+%\end{calligraphic}
+%\end{ttfamily}
+\end{slshape}
+%\end{sffamily}
+%\end{trjnfamily}
+\end{huge}
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\clearpage
+
+\newpage
+
+\vspace{30pt}
+
+\thispagestyle{empty}
+\begin{center}
+{\huge \bfseries \fontUbuntu Acknowledgement}  
+\end{center}
+
+\vspace{30pt}
+
+{\large \fontUbuntu I would like to thank $\ldots$. }
+
+\vspace{15pt}
+
+{\large \fontUbuntu My $\ldots$ and would also like to thank $\ldots$.}
+
+\vspace{15pt}
+
+{\large \fontUbuntu I would also like to thank $\ldots$!}
+
+
+\tableofcontents
+
+\listoftables
+\listoffigures
+
+%\KOMAoptions{open=right}
+\mainmatter
+
+\chapter{Introduction}
+
+
+This template is meant for two sided printing. For one sided printing, you can use 
+\begin{verbatim*}
+\documentclass[a4paper,11pt,oneside,chapterprefix=TRUE]{scrbook} 
+\end{verbatim*}
+
+Note that 
+\begin{itemize}
+\item {the cover must be printed separately using the \emph{bookcover} package for example.}
+\item {the front page does not include fields for supervisor's name etc. These can be added by adjusting the lengths. }
+\item {You need to install Ubuntu fonts for \LaTeX or change the font aspects. }
+\end{itemize}
+
+
+%\tableofcontents
+
+\chapter{Notation and Terminology}
+
+
+
+
+
+\section{Example Definition with Indexing}\label{palg}
+
+\begin{definition}
+A \emph{Partial Algebra} $P$ is a tuple of the form \[\left\langle\underline{P},\,f_{1},\,f_{2},\,\ldots ,\, f_{n}, (r_{1},\,\ldots ,\,r_{n} )\right\rangle\] with $\underline{P}$ being a set, $f_{i}$'s being partial function symbols of arity $r_{i}$. The interpretation of $f_{i}$ on the set $\underline{P}$ should be denoted by $f_{i}^{\underline{P}}$, but the superscript will be dropped in this paper as the application contexts are simple enough. If predicate symbols enter into the signature, then $P$ is termed a \emph{Partial Algebraic System}.  \index{Algebra!Partial} 
+\end{definition}
+
+
+\section{Example Proposition}\label{propos}
+
+\begin{proposition}
+ \[ 1 + 1 = 2 \text{ or } 1+ 1 \neq 2 \]
+\end{proposition}
+
+\begin{proof}
+If $1+ 1 =2 $ follows from axioms, 
+
+then \[ 1 + 1 = 2 \text{ or } 1+ 1 \neq 2 \]
+
+\begin{align}
+\text{If } 1+ 1 \neq 2\\
+\text{then } 1 + 1 = 2 \text{ or } 1+ 1 \neq 2.
+\end{align}
+
+\qed
+\end{proof}
+
+\section{Extra Files}
+
+Chapters can be kept in separate files and called as below.
+
+\textsf{chapter3.tex} is called by the following command. 
+
+Note that the file should not have any preamble in it.
+
+\include{chapter3}
+
+\include{chapter4}
+
+\include{chapter5}
+
+%\chapter{References}
+\backmatter
+\bibliographystyle{plain}
+\bibliography{bibliofile.bib}
+
+\printindex
+
+\end{document}          
+
+
+
+
+
+
+
+
